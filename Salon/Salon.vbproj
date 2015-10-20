@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1B71395-0316-4402-BE34-34BAB8529BE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Salon.My.MyApplication</StartupObject>
+    <RootNamespace>Salon</RootNamespace>
+    <AssemblyName>Salon</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Salon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Salon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>slider_pos.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DateTimePicker">
+      <HintPath>D:\project 2014\POS_Salon\POS\bin\Debug\DateTimePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Class\Common.vb" />
+    <Compile Include="Class\ConnectionManagement.vb" />
+    <Compile Include="Class\Const.vb" />
+    <Compile Include="Class\GlobalVar.vb" />
+    <Compile Include="Class\IDN_NumericTextbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\MyDateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\SQLHelper.vb" />
+    <Compile Include="ExportData.Designer.vb" />
+    <Compile Include="ExportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="locality_main_form.Designer.vb">
+      <DependentUpon>locality_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="locality_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_add_service.Designer.vb">
+      <DependentUpon>pos_add_service.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_add_service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_find_bill.Designer.vb">
+      <DependentUpon>pos_find_bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_find_bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_get_customer_tax.Designer.vb">
+      <DependentUpon>pos_get_customer_tax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_get_customer_tax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summary_Service.Designer.vb">
+      <DependentUpon>Summary_Service.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Summary_Service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service_memo_main_form.Designer.vb">
+      <DependentUpon>service_memo_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="service_memo_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplier_main_form.Designer.vb">
+      <DependentUpon>supplier_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="supplier_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="branch_main_form.Designer.vb">
+      <DependentUpon>branch_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="branch_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_form.Designer.vb">
+      <DependentUpon>login_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account_main_form.Designer.vb">
+      <DependentUpon>account_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="account_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_pd_choose_item.Designer.vb">
+      <DependentUpon>storehouse_pd_choose_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_pd_choose_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_po_choose_item.Designer.vb">
+      <DependentUpon>storehouse_po_choose_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_po_choose_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_pr_choose_item.Designer.vb">
+      <DependentUpon>storehouse_pr_choose_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_pr_choose_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_pr_choose_request_no.Designer.vb">
+      <DependentUpon>storehouse_pr_choose_request_no.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_pr_choose_request_no.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_pr_choose_history_dialog.Designer.vb">
+      <DependentUpon>storehouse_pr_choose_history_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_pr_choose_history_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_pd_choose_request_no_dialog.Designer.vb">
+      <DependentUpon>storehouse_pd_choose_request_no_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_pd_choose_request_no_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_pd_choose_history_dialog.Designer.vb">
+      <DependentUpon>storehouse_pd_choose_history_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_pd_choose_history_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_po_choose_request_no.Designer.vb">
+      <DependentUpon>storehouse_po_choose_request_no.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_po_choose_request_no.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_po_choose_history_dialog.Designer.vb">
+      <DependentUpon>storehouse_po_choose_history_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_po_choose_history_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storehouse_main_form.Designer.vb">
+      <DependentUpon>storehouse_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storehouse_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product_main_form.Designer.vb">
+      <DependentUpon>product_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="product_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_control_information_link.Designer.vb">
+      <DependentUpon>user_control_information_link.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_control_information_link.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control_panel_left.Designer.vb">
+      <DependentUpon>user_control_panel_left.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_control_panel_left.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customer_main_form.Designer.vb">
+      <DependentUpon>customer_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customer_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_select_service.Designer.vb">
+      <DependentUpon>pos_select_service.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_select_service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_main_form.Designer.vb">
+      <DependentUpon>pos_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_add_discount.Designer.vb">
+      <DependentUpon>pos_add_discount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_add_discount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_payment_cash.Designer.vb">
+      <DependentUpon>pos_payment_cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_payment_cash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_payment_credit_card.Designer.vb">
+      <DependentUpon>pos_payment_credit_card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_payment_credit_card.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_payment_coupon.Designer.vb">
+      <DependentUpon>pos_payment_coupon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_payment_coupon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_payment_voucher.Designer.vb">
+      <DependentUpon>pos_payment_voucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_payment_voucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_select_member.Designer.vb">
+      <DependentUpon>pos_select_member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_select_member.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos_add_product.Designer.vb">
+      <DependentUpon>pos_add_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pos_add_product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_control_home_button.Designer.vb">
+      <DependentUpon>user_control_home_button.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_control_home_button.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExportData.resx" />
+    <EmbeddedResource Include="locality_main_form.resx">
+      <DependentUpon>locality_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_add_service.resx">
+      <DependentUpon>pos_add_service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_find_bill.resx">
+      <DependentUpon>pos_find_bill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_get_customer_tax.resx">
+      <DependentUpon>pos_get_customer_tax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Summary_Service.resx">
+      <DependentUpon>Summary_Service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="service_memo_main_form.resx">
+      <DependentUpon>service_memo_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplier_main_form.resx">
+      <DependentUpon>supplier_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="branch_main_form.resx">
+      <DependentUpon>branch_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_form.resx">
+      <DependentUpon>login_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="account_main_form.resx">
+      <DependentUpon>account_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_pd_choose_item.resx">
+      <DependentUpon>storehouse_pd_choose_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_po_choose_item.resx">
+      <DependentUpon>storehouse_po_choose_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_pr_choose_item.resx">
+      <DependentUpon>storehouse_pr_choose_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_pr_choose_request_no.resx">
+      <DependentUpon>storehouse_pr_choose_request_no.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_pr_choose_history_dialog.resx">
+      <DependentUpon>storehouse_pr_choose_history_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_pd_choose_request_no_dialog.resx">
+      <DependentUpon>storehouse_pd_choose_request_no_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_pd_choose_history_dialog.resx">
+      <DependentUpon>storehouse_pd_choose_history_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_po_choose_request_no.resx">
+      <DependentUpon>storehouse_po_choose_request_no.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_po_choose_history_dialog.resx">
+      <DependentUpon>storehouse_po_choose_history_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storehouse_main_form.resx">
+      <DependentUpon>storehouse_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product_main_form.resx">
+      <DependentUpon>product_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_main_form.resx">
+      <DependentUpon>customer_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_select_service.resx">
+      <DependentUpon>pos_select_service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_main_form.resx">
+      <DependentUpon>pos_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_add_discount.resx">
+      <DependentUpon>pos_add_discount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_payment_cash.resx">
+      <DependentUpon>pos_payment_cash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_payment_credit_card.resx">
+      <DependentUpon>pos_payment_credit_card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_payment_coupon.resx">
+      <DependentUpon>pos_payment_coupon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_payment_voucher.resx">
+      <DependentUpon>pos_payment_voucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_select_member.resx">
+      <DependentUpon>pos_select_member.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos_add_product.resx">
+      <DependentUpon>pos_add_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control_home_button.resx">
+      <DependentUpon>user_control_home_button.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control_information_link.resx">
+      <DependentUpon>user_control_information_link.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control_panel_left.resx">
+      <DependentUpon>user_control_panel_left.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="slider_pos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
