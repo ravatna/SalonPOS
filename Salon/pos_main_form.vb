@@ -1457,7 +1457,20 @@ Public Class pos_main_form
         'If GlobalVar.POSCustomer = "" Then
         '    MessageBox.Show("Pleaes select customer", "Message", MessageBoxButtons.OK)
         '    Exit Sub
-        'Else
+            'Else
+
+
+            If lvtItem.Items.Count < 1 Then
+                MessageBox.Show("Pleaes select service or product", "Message", MessageBoxButtons.OK)
+                Exit Sub
+            End If
+
+            If ListView1.Items.Count < 1 Then
+                MessageBox.Show("Pleaes select payment method", "Message", MessageBoxButtons.OK)
+                Exit Sub
+            End If
+
+
 
         If lblGrandTotal.Text = "" Or lblGrandTotal.Text = "0" Then
                 MessageBox.Show("Pleaes select payment method", "Message", MessageBoxButtons.OK)
@@ -1536,7 +1549,7 @@ Public Class pos_main_form
                 ' get new bill no
 
                 ' getNewBillNo()
-                ' processNewBill() user will press new bill
+                 processNewBill() user will press new bill
 
             End If
             
@@ -1652,8 +1665,10 @@ Public Class pos_main_form
 
         'Dim dtSaleDetail As DataTable = SQLHelper.ExecuteTable(ConnectionManagement.GetConnection, CommandType.Text, sqlx)
 
+        Dim _billNo As String = dtSale.Rows(0).Item("Code").ToString()
+
         Line += 16
-        AnyString_Lucida(e.Graphics, "                   " & dtSale.Rows(0).Item("Code").ToString(), 0, Line)
+        AnyString_Lucida(e.Graphics, "                   " & _billNo, 0, Line)
         Line += 16
         AnyString_Lucida(e.Graphics, "                      " & CDate(dtSale.Rows(0).Item("InsertDate")).ToString("dd/MM/yyyy"), 0, Line)
         Line += 16
@@ -1785,13 +1800,16 @@ Public Class pos_main_form
 
         'Dim dtSaleDetail As DataTable = SQLHelper.ExecuteTable(ConnectionManagement.GetConnection, CommandType.Text, sqlx)
 
-        Line += 16
-        AnyString_Lucida(e.Graphics, "                   " & dtSale.Rows(0).Item("Code").ToString(), 0, Line)
+        Dim _billNo As String = dtSale.Rows(0).Item("Code").ToString()
+
+
+        Line += 16 ' 
+        AnyString_Lucida(e.Graphics, "                   " & _billNo, 0, Line)
         Line += 16
         AnyString_Lucida(e.Graphics, "                      " & CDate(dtSale.Rows(0).Item("InsertDate")).ToString("dd/MM/yyyy"), 0, Line)
         Line += 16
 
-        AnyString_Lucida(e.Graphics, "    ใบเสร็จรับเงิน/ใบกำกับภาษีอย่างย่อ", 0, Line)
+        AnyString_Lucida(e.Graphics, "            ใบกำกับภาษี ", 0, Line)
         Line += 16
 
         AnyString_Lucida(e.Graphics, "        บริษัท บอยริคิว จำกัด ", 0, Line)
@@ -1818,9 +1836,11 @@ Public Class pos_main_form
         Line += 16
         AnyString_Lucida(e.Graphics, frm.CustomerAddr1, 0, Line)
         Line += 16
-        AnyString_Lucida(e.Graphics, frm.CustomerAddr2, 0, Line)
-        Line += 16
-        AnyString_Lucida(e.Graphics, frm.CustomerAddr3, 0, Line)
+        AnyString_Lucida(e.Graphics, frm.CustomerAddr2 & " " & frm.CustomerAddr3, 0, Line)
+
+        'Line += 16
+        'AnyString_Lucida(e.Graphics, frm.CustomerAddr3, 0, Line)
+
         Line += 16
         AnyString_Lucida(e.Graphics, "Tax No. " & frm.CustomerTax, 0, Line)
         Line += 20
@@ -1994,7 +2014,7 @@ Public Class pos_main_form
             item(0) = ii + 1 ' no
             item(1) = dt.Rows(0).Item("Code") ' code
             item(2) = dt.Rows(0).Item("Title") ' title
-            item(3) = 1 ' amout
+            item(3) = _rd.GetValue(4).ToString() '1 ' amout
             item(4) = _rd.GetValue(3).ToString() ' unit price
             item(5) = CDec(_rd.GetValue(5).ToString()).ToString("F2") ' discount
 
