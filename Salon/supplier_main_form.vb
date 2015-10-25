@@ -125,6 +125,10 @@ Public Class supplier_main_form
         button_supplier_cancel.Text = "Cancel"
         button_supplier_proceed.Visible = True
         button_supplier_cancel.Visible = True
+
+        button_supplier_proceed.Enabled = True
+        button_supplier_cancel.Enabled = True
+
         assignHeaderData()
     End Sub
 

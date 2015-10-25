@@ -260,6 +260,10 @@ Public Class branch_main_form
         button_branch_cancel.Text = "Cancel"
         button_branch_proceed.Visible = True
         button_branch_cancel.Visible = True
+
+        button_branch_proceed.Enabled = True
+        button_branch_cancel.Enabled = True
+
         assignHeaderData()
     End Sub
 
@@ -400,8 +404,8 @@ Public Class branch_main_form
                     sql &= " ,[District]='" & textbox_branch_district.Text & "'"
                     sql &= " ,[Province]='" & combobox_branch_province.SelectedValue & "'"
                     sql &= " ,[ZipCode]='" & textbox_branch_postcode.Text & "'"
-                    sql &= " ,[Tel1]='" & textbox_branch_tel.Text & "'"
-                    sql &= " ,[Tel2]='" & textbox_branch_fax.Text & "'"
+                    sql &= " ,[Tel]='" & textbox_branch_tel.Text & "'"
+                    sql &= " ,[Fax]='" & textbox_branch_fax.Text & "'"
 
                     sql &= " ,[TAXID]='" & textbox_branch_taxid.Text & "'" 
 
