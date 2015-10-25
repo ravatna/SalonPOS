@@ -1549,7 +1549,7 @@ Public Class pos_main_form
                 ' get new bill no
 
                 ' getNewBillNo()
-                 processNewBill() user will press new bill
+                processNewBill() 'user will press new bill
 
             End If
             
