@@ -99,3 +99,47 @@ D:\Salon Projects\Salon\Salon\Salon\bin\Debug\Salon.pdb
 D:\Salon Projects\Salon\Salon\Salon\bin\Debug\Salon.xml
 D:\Salon Projects\Salon\Salon\Salon\obj\Debug\Salon.pos_get_customer_tax.resources
 D:\Salon Projects\Salon\Salon\Salon\bin\Debug\logo.bmp
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.vbproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.vbproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.ExportData.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.locality_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_add_service.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_find_bill.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_get_customer_tax.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.Summary_Service.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.service_memo_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.supplier_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.branch_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.login_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.account_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_pd_choose_item.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_po_choose_item.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_pr_choose_item.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_pr_choose_request_no.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_pr_choose_history_dialog.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_pd_choose_request_no.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_pd_choose_history_dialog.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_po_choose_request_no.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_po_choose_history_dialog.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.storehouse_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.product_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.customer_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_select_service.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_main_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_add_discount.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_payment_cash.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_payment_credit_card.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_payment_coupon.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_payment_voucher.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_select_member.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pos_add_product.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.user_control_home_button.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.user_control_information_link.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.user_control_panel_left.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.welcome_form.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.Resources.resources
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.vbproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.vbproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.exe
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.xml
+C:\Users\User\Documents\GitHub\SalonPOS\Salon\obj\Debug\Salon.pdb
